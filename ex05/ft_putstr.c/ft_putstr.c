@@ -1,22 +1,23 @@
+void ft_putchar(char c);
 
-void ft_putstr(char *str);
+void ft_putstr(char *str)
 {
-    int i;
-	
-	i = 0;
-	while(str[i] != '\0')
+    if (str)
     {
-	    write(1, &str[i], 1);
-		i++;
-	}		
+        while (*str != '\0')
+        {
+            ft_putchar(*str);
+            ++str;
+        }
+    }
 }
-/*
+
 int main(void)
 {
     char *s1;
 
 	s1 = "hello";
-	ft_putstr(s1);
+	ft_putchar(s1);
 	return 0;
 }
-*/
+
