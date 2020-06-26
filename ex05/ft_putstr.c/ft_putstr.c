@@ -11,7 +11,7 @@ void ft_putstr(char *str)
         }
     }
 }
-
+/*
 int main(void)
 {
     char *s1;
@@ -20,4 +20,4 @@ int main(void)
 	ft_putchar(s1);
 	return 0;
 }
-
+*/
